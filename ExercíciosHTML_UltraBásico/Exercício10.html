@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="8859-4">
-        <title>Document</title>
-    </head>
 
     <body>
-        <header>
-            <h1>Cabeçalho da página</h1>
-        </header>
         <style>
-            table,tr,td, th, caption{
+            title, table,tr,td, th, caption, p{
                 border: 1px solid rgb(223, 166, 44);
                 padding: 5px;
+                font-family: Arial, 'Arial Bold';
+            }
+            tfoot, th{
+				background-color:rgb(247, 231, 160);
+				color:rgb(212, 120, 0)
             }
         </style>
-        <article>
-            <p>Atividade 10:</p>
+            <p>10) Crie uma tabela com estados do brasil conforme abaixo, e para cada estado adicione a sua bandeira, e
+                um link para uma outra página com a descrição do estado e foto de alguma cidade.</p>
             <table>
                 <tr>
-                    <td>estado</td>
-                    <td>população</td>
-                    <td>capital</td>
-                    <td>região</td>
-                    <td>bandeira</td>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Capital</td>
+                    <th>Região</th>
+                    <th>Bandeira</th>
                 </tr>
 
                 <tr>
@@ -113,7 +111,157 @@
                     <td>Nordeste</td>
                     <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/45px-Bandeira_de_Mato_Grosso_do_Sul.svg.png"></td>
                 </tr>
+
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td>2.756.700</td>
+                    <td>Campo Grande</td>
+                    <td>Centro-Oeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/45px-Bandeira_de_Mato_Grosso_do_Sul.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>20.538.718</td>
+                    <td>Belo Horizonte</td>
+                    <td>Sudeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/45px-Bandeira_de_Minas_Gerais.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Pará</td>
+                    <td>8.442.962</td>
+                    <td>Belém</td>
+                    <td>Norte</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/45px-Bandeira_do_Par%C3%A1.svg.png"></td>
+                </tr>
                 
+                <tr>
+                    <td>Paraíba</td>
+                    <td>3.974.495</td>
+                    <td>João Pessoa</td>
+                    <td>Nordeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/45px-Bandeira_da_Para%C3%ADba.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Paraná</td>
+                    <td>11.080.000</td>
+                    <td>Curitiba</td>
+                    <td>Sul</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/45px-Bandeira_do_Paran%C3%A1.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9.051.113</td>
+                    <td>Recife</td>
+                    <td>Nordeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/45px-Bandeira_de_Pernambuco.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Piauí</td>
+                    <td>3.195.000</td>
+                    <td>Teresina</td>
+                    <td>Nordeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/45px-Bandeira_do_Piau%C3%AD.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>6.211.423</td>
+                    <td>Rio de Janeiro</td>
+                    <td>Sudeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/45px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td>3.302.406</td>
+                    <td>Natal</td>
+                    <td>Nordeste</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/45px-Bandeira_do_Rio_Grande_do_Norte.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>11.029.000</td>
+                    <td>Porto Alegre</td>
+                    <td>Sul</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/45px-Bandeira_do_Rio_Grande_do_Sul.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td>
+                    <td>1.581.016</td>
+                    <td>Porto Velho</td>
+                    <td>Norte</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/45px-Bandeira_de_Rond%C3%B4nia.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>Roraima</td>
+                    <td>636.303</td>
+                    <td>Boa Vista</td>
+                    <td>Norte</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/45px-Bandeira_de_Roraima.svg.png"></td>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Roraima">
+                            <img
+                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAA9lBMVEX///8Apf8AggD4wwDcAADLIwAAhwDhAACXTwAAhQDbAADsm5vgRUX4vwD4wQAAov8AfQAAn/8AeAD/xQD2/P/y+PIAfwD86rn61Gn724Px+v///fbo8uj++Ofm9f8Apv+o2f+e1P+Ozv/97cP98MyCyf/5yCt1r3X+89j74Jj85an3+/eRvpGpzKmrt47nwSo/qeQvqOqYtKHev0D60l7613b73Yt4xf/5zUl8snz84p35yjn++en50FWSv5JWrNWSs6gap/PVvk9rqmt9mwDKtABKjgBvmAAriADhvACsqgBglADRtgC6rwCTogCbxJveQ0AAjiB0PeMtAAAHvklEQVR4nO3ca3/TNhQGcFGzC9tsN7iEstAxSte1DXcKK5SWbgMGY+zy/b/MpKRJfJFkyT4Xyb8878ib4n/Pk57ESsSV4WV05+6W6BTu/zl4Rld+7CYxPIzRne4UA8PoMxUDw+g3FYPC6DsVA8KAoBgIBgzFIDCgKAaAAUcRPQYkReQYsBRRY4yu3AWliBgDniJajFEOTxEpBsZURIqRo0xFlBhYUxEhBt5URIeBORWRYeBORVQYOfJURISBPxXRYNBQRIFBRREBBh1F8BiUFIFgvHmjf5yWIhCMhw91j1JThIGRP3qUNx8kpwgD43FRPK49xEERBsbTonhaeYCHIgiM/FGSlHvCRREExpMiSYoni3/xUQSB8VRhXPaEkyIEjPxZliTJM9WTPN9lpAgBQ7Vk1hNuihAwLuYYF+wUAWDMWyJ70vGE3qAwfp0NRpKkE26KADAuLjGyI24Kfoz8t3lLkuSEm4IdI1+0RI4Gf094KfLdm9kS4ya3BSdGPtrdEsfJMsfcFnwYcirkH9NJusLg/3vCRaGmQmbVkhB6wkOR716uWKWWBNATDorR7nLbzMoYGSeECj1FvqKotCSAnlBTlKZCZruKsc3GMA8tRb5bfTlWseDvCSXFqEYh7tUx7vEgLMJIUW8Jf08YKYRIGqEHKIeRQuyldYt0jxygHD4KIZ5ndYzsOfHlV8NHoWsJc0+wKfKfjO9tNlvC3RNcipGZQohbjZbIntyiu/RmMCksU6GiawlvT/AorFMhc6BpiezJAdGF68JFoW8Jc0+wKL5v/cn6lrD2BIfC4e6YviW8PcGgaJ8KmRfalsievMC+ZHPgKRzvmZpawtkTaAqnqRDmlrD2hIfC3BLWnvBQCLFvrsk+2sW2hYdC7BhbInuyg3WxbWGhEOLQ2BLZk0OcS20PC4W1JYw9gaHY2beMPXbSBKpXUFPxgk0jhXs1A0Mhs5dYngbwkiWAbwcBUchMzhiGIz2DPMfQg+KX+tPmK3KN9BUgRWcMDYXMAW1VsgR4cwekUHlOOBwp+H0FUApRP2SAGfADDLf9MawUMpNTEo7s9DUwxe/XfTHaKFQoVo4U+KWtpBhv+GG4UAiClQN0uVhQbHhhOFKoHKMOB+xysaDwwfCgkDlC1EhBj9wvKdwx/ChkdvaRqpLtQ77dcfvnJYUrhjeFCs7KAbpcVCjcMCTFD11+VP3EFkQgT33VKFwwulLITE6AObJTuGfOBkU7Rg8KlUPQqgAuFxqKNoyeFAL0pRvgyzIthR2jP4UK1MqRgh2zN1DYMGAoBNTKAbZc3DBRmDHAKATIygG2XBinwowBSaFyq+dwQC0XlqkwYUBTyNzr8zyaJTDLhXUq9BgIFEKtHJ2HIzsBWS5apkKHgUOh0nXlSEFuNjpQ1DHwKETHlQNmuXCiqGKgUqhsew9HCvGZC0mx6UBRxkCnEPZ779q5AKjIjZeOFCsMCgrT0U8LRu/bqB4UCwwaCtuhNlP6/TwvijkGFYX2YwT29PqQgSeFwiCj8G9Jr554U0gMOoouLenckw4UEoOOwnL005xuh0I7UUgMwpiPfprT5VBoRwpaDH8KFd+f0pmCFKNLS7x70oOCFMN3/ZzHawntRUGKYT36aY77odCeFJQYtgPStrgenu5NQYnRrSWuPQGgoMTo2BKnnoBQEGJ0bYlDT4AoCDFedX5HOLOf9QSjIMQ4tV6vVeqUhoIO47WtJemh9d3i1HiuD5SCDuPI/Lufvedre7fY9E2hwBR0GCfm3/vx/LaI5Qa19ptCpy83YSnIMMwtWd1QNg+PpifgU0GIYbrQyg1l4w3qRk8QpoIQw9CS+g1l0w3qak9u3EeYCjqMif4im6fVDGfiyt8UOr2PMhV0GNqWaG8o68/ErXoyxZoKOowz3W/b8AJMu3KcLSjQpoIMQ9MSyw1l3cox6wnqVJBhND+QYz+t1rxBnd3EngoyjEZL2r59vvkcc4w9FVQYk/p3O7afVmuuHC7nK2LAqLXE7RPKtZWjeEuggQ2hsl195nQ8rVY9E1e8GwhG+aJS99Nq1TNxBb4FBUZ5q/T7hPJRUcIg6AmWQCmr78b1PK02PX+fLDkoeoIlUMrSwu+0mlqxxuN3q+FAtyDAWLYk9fmE8mLF2ny70Cj+QB8NNINlLr8b1+sTyqXFe/zh45yj+DwADJ/lYp7a4j3+syDau/AQLjM71ObzCeXpeX3x3vw0ex7F7wkiwzyqJR6fUJ6ea16OjTf+Kih6gukwi9dyoaVQ2fy7IOgJpoPKXuq+XBgpZMbvPxbFJ2QNVAmhXm+5Lhc2CqUx/ozeE1QJGdevP5mej9ver9h8i90TXAqx43bspmUqLjN+/yFqDLe0TwVNuB1EOBT8GG4FIQqzxT/BTIUKL0VAU6HCSRHUVKjwUQQ2FSpcFMFNhQoPRYBToUIvsXW+Mb4WZsS31Pk63IhviHP1q3Ajrq6zzBqjlDVGKeI7ivz7RRQh+Wv64L8vowgBRZjbpi74FBuxUKBjxDMVKrgUEU2FCiZFVFOhgkcR2VSoIFE8iG4qVHAoIpwKFQyKKKdCBZ4i0qlQWVOUsqYoZU1RypqilDVFKWuKUtYUpawpSulLce069xUApudUDImiF8bQKHpgDI+iK8Z0WM8Vi/wP0o9sLyt/pzcAAAAASUVORK5CYII="
+                              height="60px"
+                              width="90px"
+                            /></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>7.609.601</td>
+                    <td>Florianópolis</td>
+                    <td>Sul</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/45px-Bandeira_de_Santa_Catarina.svg.png"></td>
+                </tr>
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td>11.451.245</td>
+                    <td>São Paulo</td>
+                    <td>Sudeste</td>
+                    <td>
+                        <a href="">
+                            <im src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/45px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png">
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sergipe</td>
+                    <td>2.209.558</td>
+                    <td>Aracaju</td>
+                    <td>Nordeste</td>
+                    <td>
+                        <a href="https://pt.wikipedia.org/wiki/Sergipe">
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/45px-Bandeira_de_Sergipe.svg.png"
+                            /></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tocantins</td>
+                    <td>1.511.459</td>
+                    <td>Palmas</td>
+                    <td>Norte</td>
+                    <td>
+                        <a href=" https://pt.wikipedia.org/wiki/Tocantins">
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/45px-Bandeira_do_Tocantins.svg.png"
+                              /></a>
+                    </td>
+                </tr>
+
             </table>
         </article>
     </body>
