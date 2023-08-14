@@ -1,0 +1,53 @@
+/*Seletor Universal*/
+*{
+    margin: 0x;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/*Regra*/
+h1 /*Seletor*/{
+    color: rgb(226, 189, 21); /*Detalhador*/
+    font-size /*Proriedade*/: 24px; /*Valor*/
+    font-weight: bold;
+}
+h2{
+    border: 1px solid rgb(151, 113, 238);
+}
+input{
+    color:rgb(0, 140, 255)
+}
+
+body{
+    background-color: blueviolet;
+}
+#p01{ /*Aplicando o estilo da cor com um id específico*/
+    color: rgb(204, 44, 98);
+}
+class{
+    border: 1px solid royalblue;
+}
+div+ p{/*Seletor Irmão de uma div direta*/;
+    background-color: pink;
+}
+
+div~ p{/*Seletor Irmão: pega de uma div irmão*/;
+    background-color: pink;
+}
+
+div > p {/*Seletor Filho: Parágrafo que de um div direta*/;
+    background-color:pink;
+}
+
+/*PSEUDO SELETORES*/
+body{
+    background-color: blueviolet;
+}
+body:houver{
+    background-color: blue;
+}
+
+div>p:nth-child(){
+    background-color: blue;
+}
