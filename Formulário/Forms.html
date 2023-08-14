@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    fieldset{
+        font-family:  Arial, sans-serif;
+        border-radius: 10px;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +15,35 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <label></label>
+    <form action="" method="post"> <!--Forumlário-->
+
+        <!--O método para o post coloca os campos que você enviou para o formulário envia para um documento separado-->
+        <!--Outro método também utilizado é o GET: -->
+
+        <!--Label é o nome que aparece e o input é onde a informação aparecerá:-->
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Emily2023">  <!--Caracteres m[ínimos e máximos minlenght="4" maxlenght="20"-->
+            <input type="submit">
+
+            <br>
+
+            <label for="email">Email</label><br>
+            <input type="text" name="txtemail" id="email">
+
+            <br>
+
+            <label for="text">Senha:</label><br>
+            <input type="text" id="password" password="password"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Check Boxes</legend>
+            <input type="checkbox" id="vehicle1" name
+            
+        </fieldset>
     </form>
     
 </body>
