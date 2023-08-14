@@ -30,19 +30,45 @@
 
             <br>
 
-            <label for="email">Email</label><br>
-            <input type="text" name="txtemail" id="email">
+            <label for="email">Entre com o servidor.com.br email:</label><br>
+            <input type="email" id="email">
 
             <br>
 
             <label for="text">Senha:</label><br>
             <input type="text" id="password" password="password"><br>
+
+            <label for="date">Data:</label><br>
+            <input type="date">
         </fieldset>
 
         <fieldset>
             <legend>Check Boxes</legend>
-            <input type="checkbox" id="vehicle1" name
-            
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Eu tenho uma bicicleta</label><br>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Eu tenho um carro</label><br>
+
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+            <label for="vehicle3">Eu não tenho nada</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <label for="avatar">Escolha uma imagem:</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Image Button</legend>
+            <p>Sign in to your account:</p>
+            <div>
+                <lable for="userId">User ID</lable>
+                <input type="text" id="userId" name="userId"/>
+            </div>
+
+            <input type="image" id="image" alt="Login" src="C:\Users\Aluno\Documents\P.P.I\P.P.I\ExercíciosHTML_UltraBásico\Exercício4"/>
         </fieldset>
     </form>
     
