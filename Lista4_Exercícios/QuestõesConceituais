@@ -1,0 +1,37 @@
+1) O que é uma regra CSS?, propriedade? qual a sintaxe de um arquivo CSS? E como podemos incorporar CSS aos nossos documentos HTML.
+ Uma regra CSS é criada com o propósito de determinar o estilo para seletores específicos os quais são determinados antes das chaves. Como por exemplo:
+
+ Sendo h1 o seletor e o que consta dentro das chaves a regra CSS. Nesse exemplo a regra define que para o seletor h1 a cor dele será a determinada pelo rgb.
+ h1{
+    color: rgb (162, 0, 255);
+ }
+
+ Temos algumas maneiras de incorporar o CSS no nosso arquivo, alguns exemplos são:
+    1. Colocar dentro da própria tag para aplicar um estilo específico somente dentro dela;
+        <h1 style="color: rgb(90, 12, 192);">Título com a cor</h1>
+
+    2. Abrir a tag style e aplicar com os seletores:
+    <style>
+        body{
+            background-color: azure;
+        }
+    </style>
+
+2) Em que pontos do código podemos definir uma regra css? Como isso impactar a definição das
+propriedades?. Apresente exemplos de uso e explique.
+Posicionamos as regras CSS dentro da tag style para realizar a aplicação das propriedades definidas aos seletores:
+Nesse exemplo definimos dentro da tag style uma regra para as tags de p(parágrafo) e h1(Os headng 1s do documento), as propriedades de cor, tipografias e tamanho.
+<style>
+    p, h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        color: black;
+    }
+</style>
+
+3) Explique as vantagens de manter a estilização em uma linguagem que não HTML.
+
+
+4) Sobre seletores CSS, como uma regra CSS pode ser associada a elementos HTML? Explique com
+exemplo e completude
+
