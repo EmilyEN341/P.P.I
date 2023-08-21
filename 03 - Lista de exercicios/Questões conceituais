@@ -1,3 +1,7 @@
+1) Em um elemento formulário qual a finalidade do atributo action e method explique se precisar com
+gráficos. 
+    O atributo action define o local (URL) ond os dados serão enviados. O atributo method define qual o método HTTP envia os dados.
+
 3) O que diferencia um <button> de uma <input type=”button”> de um <input type=”submit”>
     A tag button não tem uma ação definida, é só um botão. Enquanto o <input type=”submit”> tem o intuito de realizar o "envio" das informações adicionadas nos inputs.
 
@@ -10,4 +14,4 @@ referenciar um documento na web?
     
     Referenciada pelo sorce de uma imagem chamada workplace no formato jpg. Tem também um atributo usemap o qual faz referência ao mapa #workmap, com os tamanhos definidos como wxh: 400x379.
 
-    Ainda dentro da tag <map> contém três ítens, os quais são as aréas do map com as suas respectivas coordernadas, associado aos links com os atributos definidos pelo href e nomeados pelo atributo do alt. Assim que essas áreas fossem selecionadas
+    Ainda dentro da tag <map> contém três ítens, os quais são as aréas do map com as suas respectivas coordernadas, associado aos links com os atributos definidos pelo href e nomeados pelo atributo do alt. Assim que essas áreas fossem selecionadas seria redirecionado para a página indicada no href.
