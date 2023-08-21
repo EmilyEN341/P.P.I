@@ -1,36 +1,71 @@
 1) O que é uma regra CSS?, propriedade? qual a sintaxe de um arquivo CSS? E como podemos incorporar CSS aos nossos documentos HTML.
- Uma regra CSS é criada com o propósito de determinar o estilo para seletores específicos os quais são determinados antes das chaves. Como por exemplo:
 
- Sendo h1 o seletor e o que consta dentro das chaves a regra CSS. Nesse exemplo a regra define que para o seletor h1 a cor dele será a determinada pelo rgb.
- h1{
-    color: rgb (162, 0, 255);
- }
+ RA: Uma regra CSS é criada com o propósito de determinar o estilo para elementos HTML, através de propriedades, características (color: cor do texto, font-size: tamanho da fonte) que serão impostas aos seletores (como h1,p entre outros). Como por exemplo:
 
- Temos algumas maneiras de incorporar o CSS no nosso arquivo, alguns exemplos são:
-    1. Colocar dentro da própria tag para aplicar um estilo específico somente dentro dela;
-        <h1 style="color: rgb(90, 12, 192);">Título com a cor</h1>
+    Dentro da tag style: Regra Css;
+    h1: Seletor;
+    color: propriedade css.
 
-    2. Abrir a tag style e aplicar com os seletores:
     <style>
-        body{
-            background-color: azure;
+        h1 { 
+            color: rgb (162, 0, 255);
         }
     </style>
 
-2) Em que pontos do código podemos definir uma regra css? Como isso impactar a definição das
-propriedades?. Apresente exemplos de uso e explique.
-Posicionamos as regras CSS dentro da tag style para realizar a aplicação das propriedades definidas aos seletores:
-Nesse exemplo definimos dentro da tag style uma regra para as tags de p(parágrafo) e h1(Os headng 1s do documento), as propriedades de cor, tipografias e tamanho.
-<style>
-    p, h1{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 12px;
-        color: black;
+
+ RB: Sintaxe de um arquivo CSS:
+    seletor{
+        propriedade: valor;
     }
-</style>
+
+Resposta C e 2:
+2) Em que pontos do código podemos definir uma regra css? Como isso impactar a definição das
+propriedades?. Apresente exemplos de uso e explique. 
+
+ RC: Temos algumas maneiras de incorporar o CSS no aqruivo, Exemplo:
+
+    - Inline: Envolve aplicar os estilos diretamente na linha de um elemento com o atributo "style". Ex:
+        <h1 style= "color rgb (90, 12, 192);">Título com a cor</h1>
+
+    - Internos: Utilizando a tag <style> no cabeçalho da página para definir utilizando os seletores específicos os quais receberão as regras.
+        Ex:
+            <style>
+                p, h3 {
+                    font-size: 12px;
+                }
+            </style>
+    
+    - Externos: O formato recomendável quando se trata de aplicar estilos aos elementos HTML, é deixar essas especificações em um arquivo fora de nossa página. Para utilizar os estilos desse arquivo CSS precisamos vincular com a <link> no cabeçalho.
+        Ex:
+        <head>
+            <link rel="stylesheet" type="text/css" href="estilos.css">
+        </head>
+    
+ Como isso impacta a definição de propriedades?
+    Dependendo de onde o estilo for colocado, influenciará na interpretação do código. Tendo hirarquia, sendo estilos aplicados na linha (InLine), estilos internos e estilos externos. Caso ouverem conflitos prevalece a ultima regra ou a mais específica.
+
+    Ex:
+    <html>
+        <head>
+            <style>
+                p { INTERNO
+                    font-size: 14px;
+                    color: blue;
+                }
+            </style>
+            <link rel="stylesheet" type="text/css" href="estilos.css"> EXTERNO
+        </head>
+        <body>
+            <h1 style="color: red;">Título com estilo</h1> INLINE
+            <p>Parágrafo interno.</p>
+            <p class="destaque">Este é outro parágrafo com estilo interno.</p>
+            <p>Parágrafo externo.</p>
+        </body>
+    </html>
+
 
 3) Explique as vantagens de manter a estilização em uma linguagem que não HTML.
-
+ R:
 
 4) Sobre seletores CSS, como uma regra CSS pode ser associada a elementos HTML? Explique com
 exemplo e completude
