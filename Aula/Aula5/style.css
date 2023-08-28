@@ -1,12 +1,12 @@
 .div{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    position: fixed;
 }
 
 #div1{
     background-color:rgb(108, 18, 192);
     /*Relative: Relativo ao seu local de origem.*/
-    position: fixed; 
     left: 0px;
     bottom: 0px;
 
@@ -14,7 +14,6 @@
 
 #div2{
     background-color:rgb(31, 211, 15);
-    position: fixed;
     right:0px;
     bottom:0px;
 }
@@ -31,8 +30,35 @@
 }
 
 #span{
-    background-color: black;
-    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border: 50px solid rgb(0, 0, 0);
+    border-top-color: rgb(255, 145, 0);
+
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 50%;
+    /*Aimação legal*/
+    /*
+    transition: all 2s ease-in-out;
+    transition: border-top-color 2s; 
+    transition: border-top-width 2s;
+    transition: transform 5s;
+    */
+
+    animation: rotacao 2s linear infinite;
+
+}
+
+@keyframes rotacao{
+    0%{transform: rotate(0deg)}
+
+    100%{transform: rotate(350deg);}
+}
+
+#span:hover{
+    border-top-color: rgb(13, 255, 94);
+    transform: translate(-50%,-50%) rotate(10060deg);
+
 }
