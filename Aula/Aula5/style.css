@@ -1,0 +1,31 @@
+.div{
+    width: 100px;
+    height: 100px;
+}
+
+#div1{
+    background-color:rgb(108, 18, 192);
+    /*Relative: Relativo ao seu local de origem.*/
+    position: fixed; 
+    left: 0px;
+    bottom: 0px;
+
+}
+
+#div2{
+    background-color:rgb(31, 211, 15);
+    position: fixed;
+    right:0px;
+    bottom:0px;
+}
+
+#div3{
+    background-color:rgb(211, 198, 15);
+    top:0px;
+    right: 0px;
+    
+}
+
+#div4{
+    background-color:rgb(211, 15, 185);
+}
