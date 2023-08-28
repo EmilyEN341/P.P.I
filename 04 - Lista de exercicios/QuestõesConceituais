@@ -70,3 +70,5 @@ propriedades?. Apresente exemplos de uso e explique.
 4) Sobre seletores CSS, como uma regra CSS pode ser associada a elementos HTML? Explique com
 exemplo e completude
 
+7) Na questão anterior, o que foi necessário para alinha o texto ao centro. 
+  Dentro da tag de tyle para os blocks foi aplicado aos textos de cada um deles o atributo "text-align: center;" para que os textos ficassem alinhados.
