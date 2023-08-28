@@ -1,3 +1,5 @@
+/*CÓDIGOS TRABALHADOS ANTERIORMENTE*/
+
 .div{
     width: 150px;
     height: 150px;
@@ -8,7 +10,7 @@
     background-color:rgb(108, 18, 192);
     /*Relative: Relativo ao seu local de origem.*/
     left: 0px;
-    bottom: 0px;
+    bottom:0px;
 
 }
 
@@ -39,8 +41,9 @@
     transform: translate(-50%,-50%);
 
     border-radius: 50%;
-    /*Aimação legal*/
+
     /*
+    Aimação legal
     transition: all 2s ease-in-out;
     transition: border-top-color 2s; 
     transition: border-top-width 2s;
@@ -62,3 +65,6 @@
     transform: translate(-50%,-50%) rotate(10060deg);
 
 }
+
+
+
