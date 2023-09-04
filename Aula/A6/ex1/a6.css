@@ -1,0 +1,26 @@
+.container{
+
+    min-height: 100vh;
+    display: flex;
+    border: 1px solid gray;
+/*    flex-direction: row-reverse;*/
+    justify-content: center;
+
+    /*align-content: center;*/
+    align-items: center; /*Alinha os elementos perpendicular ao fluxo*/
+}
+.box{
+    border: 1px solid gray;
+    /*min-width: 60px;*/
+}
+.box::before{
+    content: "BOX";
+}
+#box-1{
+    flex-grow: 1;
+    max-width: 100px;
+}
+#box-2{
+    flex-grow: 4;
+    max-width: 100px;
+}
