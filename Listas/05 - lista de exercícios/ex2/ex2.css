@@ -1,3 +1,5 @@
+
+/*Japão*/
 .bandeira{
     display: flex;
     width: 400px;
@@ -15,22 +17,23 @@
     border-radius: 50%;
 }
 
+/*Holanda*/
 .holanda {
-    display: flexbox;
+    flex-direction: column;
 }
-    #box1{
+    #strip1{
         background-color: red;
     }
 
-    #box2{
+    #strip2{
         background-color: white;
     }
 
-    #box3{
+    #strip3{
         background-color: blue;
     }
 
-
+/*Italia*/
 .italia {
     display: grid;
     grid-template-areas: "header1 header2 header3";
