@@ -15,8 +15,16 @@
     border-radius: 50%;
 }
 
-.br{
+.br>triangulo {
     background-color: rgb(4, 153, 4);
     justify-content: center;
+    border-right-color:yellow;
+    border-left-color:yellow;
+} bola{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
 }
     
