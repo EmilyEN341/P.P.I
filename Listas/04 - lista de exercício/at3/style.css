@@ -1,0 +1,256 @@
+.cv,
+.cv * {
+  box-sizing: border-box;
+}
+.cv {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 595px;
+  position: relative;
+}
+.estilo-do-lado {
+  background: #6e11e4;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.profile {
+  flex-shrink: 0;
+  width: 159px;
+  height: 159px;
+  position: static;
+}
+.ellipse-1 {
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: #ffffff;
+  border-width: 4px;
+  width: 159px;
+  height: 159px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.ellipse-12 {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 143px;
+  height: 143px;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+._0-1 {
+  width: 144px;
+  height: 195px;
+  position: absolute;
+  left: 24px;
+  top: -11px;
+}
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.contatos2 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 16px "Inter", sans-serif;
+  position: relative;
+}
+.telefone {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.telefone2 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 14px "Inter", sans-serif;
+  position: relative;
+}
+._47-99631-6088 {
+  color: #ffffff;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.e-mail {
+  color: #ffffff;
+  text-align: left;
+  font: 600 14px "Inter", sans-serif;
+  position: relative;
+}
+.emily-elisabethn-gmail-com {
+  color: #ffffff;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+.linked-in {
+  color: #ffffff;
+  text-align: left;
+  font: 600 14px "Inter", sans-serif;
+  position: relative;
+}
+.emily-elisabeth-neves {
+  color: #ffffff;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  text-decoration: underline;
+  position: relative;
+  align-self: stretch;
+}
+.conte-do {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.nome-cargo {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.emily-elisabeth-neves2 {
+  color: #000000;
+  text-align: left;
+  font: 700 24px "Inter", sans-serif;
+  position: relative;
+}
+.ux-ui-designer {
+  color: #000000;
+  text-align: left;
+  font: 400 14px "Inter", sans-serif;
+  position: relative;
+}
+.bloco-informa-es {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sobre-mim2 {
+  color: #000000;
+  text-align: left;
+  font: 600 16px "Inter", sans-serif;
+  position: relative;
+}
+.tenho-19-anos-estou-finalizando-o-ensino-m-dio-integrado-no-instituto-federal-de-santa-catarina-ifsc-no-c-mpus-gaspar-a-experi-ncia-dentro-da-institui-o-que-me-permitiu-explorar-o-mundo-da-tecnologia-e-com-ela-agregar-em-todos-os-mbitos-da-tecnologia {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: relative;
+  width: 335px;
+}
+.cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.cursos2 {
+  color: #000000;
+  text-align: left;
+  font: 600 16px "Inter", sans-serif;
+  position: relative;
+}
+.pro-way-illustrator-b-sico-photoshop-avan-ado-alura-ui-user-interface-ux-user-experience-design {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: relative;
+  width: 335px;
+}
+.pro-way-illustrator-b-sico-photoshop-avan-ado-alura-ui-user-interface-ux-user-experience-design-span {
+  color: #000000;
+  font: 400 12px "Inter", sans-serif;
+}
+.pro-way-illustrator-b-sico-photoshop-avan-ado-alura-ui-user-interface-ux-user-experience-design-span2 {
+  color: #000000;
+  font: 400 12px "Inter", sans-serif;
+}
+.pro-way-illustrator-b-sico-photoshop-avan-ado-alura-ui-user-interface-ux-user-experience-design-span3 {
+  color: #000000;
+  font: 400 12px "Inter", sans-serif;
+}
+.pro-way-illustrator-b-sico-photoshop-avan-ado-alura-ui-user-interface-ux-user-experience-design-span4 {
+  color: #000000;
+  font: 400 12px "Inter", sans-serif;
+}
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.experi-ncia {
+  color: #000000;
+  text-align: left;
+  font: 600 16px "Inter", sans-serif;
+  position: relative;
+}
+.ux-ui-designer-na-empresa-lince-participa-es-e-empreendimentos-ltda {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: relative;
+  width: 335px;
+}
