@@ -1,0 +1,26 @@
+#div {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    border-radius: 50%;
+    animation: ParaOAltoEAvante 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ParaOAltoEAvante {
+    0% {
+        top: 600px;
+    }
+    25% {
+        top: 400px;
+    }
+    50% {
+        top: -80px;
+    }
+    75% {
+        top: -80px;
+    }
+    100% {
+        top: 600px;
+    }
+}

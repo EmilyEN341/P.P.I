@@ -1,0 +1,61 @@
+/*Japão*/
+.bandeira {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.japao {
+    justify-content: center;
+    align-items: center;
+}
+
+circle {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*Holanda*/
+.holanda {
+    flex-direction: column;
+}
+
+#strip1 {
+    background-color: red;
+}
+
+#strip2 {
+    background-color: white;
+}
+
+#strip3 {
+    background-color: blue;
+}
+
+.strip {
+    flex: 1;
+}
+
+/*Italia*/
+.italia {
+    display: grid;
+    grid-template-areas: "header1 header2 header3";
+}
+
+#box1 {
+    grid-area: header1;
+    background-color: rgb(1, 114, 1);
+}
+
+#box2 {
+    grid-area: header2;
+    background-color: white;
+}
+
+#box3 {
+    grid-area: header3;
+    background-color: rgb(170, 0, 0);
+}

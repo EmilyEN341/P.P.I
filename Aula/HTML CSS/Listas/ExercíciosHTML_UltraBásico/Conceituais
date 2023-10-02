@@ -1,0 +1,77 @@
+1) Quais os diferentes tipos de listagens existentes no HTML, explique e apresente exemplos de listagens,
+exibindo o código e a interpretação do código pelo navegador.
+R: Dentro do HTML podemos trabalhar com três diferentes tipos de listagens:
+
+<ul> listagens não ordenadas: a qual como o próprio nome diz não segue uma ordem específica. São marcadas pelos chamados bullet points. 
+    Ex:
+        <ul>
+            <li>Item;</li>
+            <li>Item;</li>
+            <li>Item.</li>
+        </ul>
+<ol> listagens ordenadas: conforme o nome essa listgem segue uma ordem específica. Cada componente e numerado automaticamente.
+    Ex:
+    <ol>
+        <li>Item;</li>
+        <li>Item;</li>
+        <li>Item.</li>
+    </ol>
+<dt> listagens definidas: cria uma lista identada com ítens e sub-ítens específico:
+    EX:
+    <dl>
+        <dt>Comida</dt>
+            <dd>Carne<dd>
+        <dt>Bebida</dt>
+            <dd>Coca</dd>
+    </dl>
+
+
+2) Quais as tags relacionadas a construção de tabelas no HTML, apresente um exemplo de código e
+resultado da interpretação do mesmo.
+R: Aqui estão as tags e suas respectivas funções:
+<stye>
+    table{
+        border: 1px solid rgb(223,166,44); <!--Adiciona uma borda à tabela-->
+    }    
+</stye>
+
+<table> <!--Cria a tabela em si-->
+    <tr><!--Linha da tabela-->
+        <caption></caption> <!--Descrição da tabela-->
+        <th></th> <!--Cabeçalho de uma tabela-->
+        <td></td> <!--Cria células normais-->
+    </tr>
+</table>
+<tr>
+
+
+3) Quais tags podemos utilizar para criar links, cite explique os parâmetros utilizados.
+R: Podemos utilizar a tag <a> com diversos atributos, como:
+
+- href indica o destino do link:
+    Ex: <a href="url">Link text</a>
+        - links o Atributo de Destino:
+        O target atributo pode ter um dos seguintes valores:
+        Ex: <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        
+        -self- Padrão. Abre o documento na mesma janela/guia em que foi clicado
+        -blank- Abre o documento em uma nova janela ou guia
+        -parent- Abre o documento no quadro pai
+        -top- Abre o documento em todo o corpo da janela
+
+Também podemos utilizar uma iamgem como um link:
+Ex: <img src="">
+
+Link com endereço de e-mail:
+Ex: <a href="mailto:someone@example.com">Send email</a>
+
+Botão como link:
+Ex: <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+Títulos de link:
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+
+5) Explique o uso da propriedade target na tag <a>
+R: O atributo target na tag <a> tem a função de interligar páginas.
