@@ -1,4 +1,4 @@
-let input = ducument.getElementById("inputNota");
+let input = document.getElementById("inputNota");
 var listaNotas = [];
 let divLista = document.getElementById("divLista");
 
@@ -13,7 +13,7 @@ function displayNotas() {
     divLista.innerHTML = "";
 
     for (let index = 0; index< listaNotas.length; index++) {
-        paragrafoNovo = docuemnt.creatElement("p");
+        paragrafoNovo = document.createElement("p");
         paragrafoNovo.innerHTML=listaNotas[index];
 
         if(index%2==0) {
