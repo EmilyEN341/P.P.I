@@ -25,4 +25,5 @@ function displayNotas() {
 
         divLista.append(paragrafoNovo);
     }
+    
 }
