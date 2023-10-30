@@ -1,22 +1,68 @@
-h1, p{
-    font-family: Arial, Helvetica, sans-serif;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Altere para a cor de fundo desejada */
+    z-inde
+    x: 1000; /* Deixa o menu por cima de outros elementos */
 }
 
-/* CSS Grid */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "header header header"
-        "sidebar content content"
-        "footer footer footer";
+body {
+    padding-top: 60px; /* Altura do menu */
 }
 
-/* Flexbox */
-.container {
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 14px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Posicionamento com CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Posicionamento com Flexbox */
+.flex-container {
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.flex-item:last-child {
+    margin-right: 0;
 }
