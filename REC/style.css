@@ -1,68 +1,348 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff; /* Altere para a cor de fundo desejada */
-    z-inde
-    x: 1000; /* Deixa o menu por cima de outros elementos */
-}
-
 body {
-    padding-top: 60px; /* Altura do menu */
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 14px 0;
-}
-
-nav ul {
-    list-style-type: none;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navigation"
+        "content"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+
+
+
+
+.header {
+    grid-area: header;
+    text-align: center;
+    padding: 16px;
+    color: #271104;
+}
+.Buttom{
+    grid-area: footer;
+    transition: transform 0.3s ease-in-out;
 }
 
-nav ul li a {
+.header p{
+    background-color: #271104;
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+
+
+
+
+/*Navegação*/
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 16px;
+    background-color: #271104;
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+}
+
+.navigation p {
+    margin: 0.0;
+    transition: all 0.3s ease;
+}
+
+.navigation a {
+    transition: all 0.3s ease;
+    color: #ddd;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+}
+
+.navigation a:hover {
+    color: #ffc107;
+}
+
+.navigation img {
+    width: 32px;
+    height: 20px;
+}
+
+.navigation img:hover {
+    image-rendering: auto;
+    color: #ffc107;
+}
+
+
+
+
+
+
+
+/*Animação de ir até parte da página*/
+a {
+    color: inherit; /*Herda c pai*/
+    text-decoration: none; /*Sem o sublinhado do texto*/
+}
+
+    a:hover { /*Mudando de cor*/
+        color: #ffc107;
+        transition: ease-in-out;
+    }
+
+    /* Scroll to Anchor Link */
+    a[href^="#"] {
+        position: relative;
+        transition: ease;
+    }
+
+    a[href^="#"]:before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        height: 100px;
+        transition: ease-in-out;
+    }
+
+    .Buttom a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .header p:hover {
+        color: #271104;
+        background-color: #ffc107;
+        transform: translateY(-5px);
+    }
+    
+    .Buttom a:before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        height: 100px;
+        transition: ease-in-out;
+    }
+
+
+.boxContent{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 24px 24px;
+}
+.banner img{
+    width: 100%;
+
+}
+
+
+
+
+
+
+/*Banner Produtos*/
+.Produtos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    gap: 32px;
+    background-color: #632400;
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.Produtos img {
+    width: 100;
+    height: 400px;
+}
+
+.card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%);
+}
+
+.card-content {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .content {
-    padding: 20px;
+    display: flex;
+    padding: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
 }
 
-.content img {
-    max-width: 100%;
+.rating {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 100px;
+    word-wrap: break-word;
+}
+
+.details, .details p, h4 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    
+    color: black;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 700;
+    text-align: center;
+}
+.details p{
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+.details h4{
+    justify-content: flex-start;
+    padding: 8px;
+}
+.rating{
+    justify-content: flex-start;
+    padding: 4px;
+}
+
+
+
+
+
+
+/* Posicionamento com CSS Flex */
+.organiza{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    border-radius: 16px;
+}
+
+.dream-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-color: #ffc107;
+    padding: 24px;
+}
+.dream-team h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.dream-func {
+    text-align: center;
+    background-color: #f4efdf;
+    transition: background-color 0.5s ease;
+    border-radius: 16px;
+    margin: 8px;
+    padding: 24px;
+}
+.dream-func:hover{
+    background-color:#271104;
+    color:#ffc107;
+}
+
+.dream-func img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ffc107;
+}
+
+.fun-nome {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+}
+
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0;
+    background-color: #271104;
+    color: #f2f2f2;
+}
+
+.logo img {
+    width: 100px;
     height: auto;
 }
 
-/* Posicionamento com CSS Grid */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.footer img {
+    width: 40px;
+    height: auto;
 }
 
-/* Posicionamento com Flexbox */
-.flex-container {
+.footer div {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.flex-item {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.flex-item:last-child {
-    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }

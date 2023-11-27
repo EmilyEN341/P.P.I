@@ -1,58 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latting Coffee</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+    <body>
+        
 
-        <div class="container">
-            <header class="header">Header</header>
-            <aside class="sidebar">Sidebar</aside>
-            <main class="content">Content</main>
-            <footer class="footer">Footer</footer>
+        <!-- Navegação --> 
+        <div class="navigation">
+            <img src="LogoCafe.svg" alt="LogoCafe">
+            <p class="Home"><a href="#Home">Home</a></p>
+            <p class="Prod"><a href="#Produtos">Cardápio</a></p>
+            <p class="DreamTeam"><a href="#DreamTeam">Dream Team</a></p>
+            <p class="Footer"><a href="#Footer">Contato</a></p>
         </div>
 
+        
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Bem-vindo(a) à Latin Coffee</h1>
-            <img src="logo.png" alt="Logo da Latin Coffee">
-        </section>
-        <section id="produtos">
-            <h2>Produtos</h2>
-            <ul>
-                <li>Café cubano</li>
-                <li>Expresso Brasileiro</li>
-                <li>Tortilhas de Pollo</li>
-            </ul>
-        </section>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>
-                A cafeteria Latin Coffee ☕🍪 tem como objetivo
-                resgatar as culturas da América Latina
-                através de seus cafés, trazendo assim a 
-                diversidade em uma xícara, deixando o coração 
-                dos amantes de café cada vez mais quentinho😍!
-            </p>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-               
+        <div class="boxContent"> <!--Organiza o espaço da tela-->
+
+
+            <div class="banner">
+                <img src="Banner.png" alt="Produtos da Cafeteria">
+            </div>
+
+            <div class="header">
+                <h1>A melhor cafeteria do mundo🤎</h1>
+                <p class="Buttom"><a href="#Footer">Encontre e compre a melhor qualidade de café online</a></p>
+            </div>
+
+            <div class="Produtos" id="Produtos">
+                <img src="Produtos.svg" alt="Cardápio">
+
+                <div class="card">
+                    <img src="Cafe.svg" alt="Café">
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <div class="details">
+                        <h4>Café</h4>
+                        <p>R$03,00</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="Cha.svg" alt="Cha">
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <div class="details">
+                        <h4>Chá</h4>
+                        <p>R$03,00</p>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <img src="Suco.svg" alt="Suco">
+
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                    <div class="details">
+                        <h4>Suco</h4>
+                        <p>R$03,00</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="dream-team">
+
+                <h2 id="DreamTeam">Dream Team</h2>
+
+                <div class="organiza">
+
+                    <div class="dream-func">
+                        <!--Funcionário 1-->
+                        <img src="Elizabeth.svg" alt="Elizabeth">
+                        <div class="fun-nome">Elizabeth</div>
+                    </div>
+                    <div class="dream-func">
+                        <!--Funcionário 2-->
+                        <img src="Christopher.svg" alt="Christopher">
+                        <div class="fun-nome">Christopher</div>
+                    </div>
+                    <div class="dream-func">
+                        <!--Funcionário 3-->
+                        <img src="Anna.svg" alt="Anna">
+                        <div class="fun-nome">Anna</div>
+                    </div>  
+
+                </div>
+                    
+            </div>
+        
+        </div>
+        <!-- Posicionamento com Grid -->
+        <div class="footer" id="Footer">
+            <div class="logo">
+                <img src="LogoCafe.svg" alt="">
+            </div>
+            
+            <div class="call">
+                <img src="Phone.svg" alt="phone">
+                (47)99999-9999
+            </div>
+
+            <div class="Social">
+                <img src="InstagramLogo.svg" alt="Instagram">
+                latin.coffee
+            </div>
+
+            <div class="email">
+                <img src="Envelope.svg" alt="E-mail">
+                latin.coffee@gmail.com
+            </div>
+            
+        </div>
+            
+    </body>
+</html> 

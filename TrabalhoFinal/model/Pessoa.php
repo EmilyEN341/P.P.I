@@ -6,8 +6,9 @@ class Pessoa{
     public $email;
     public $senha;
 
-    public function setAll($id, $nome, $email, $senha){
-        $this->id = $id;
+    public function __construct(){}
+
+    public function setAll($nome, $email, $senha){
         $this->nome = $nome;
         $this->email = $email;
         $this->senha = $senha;
